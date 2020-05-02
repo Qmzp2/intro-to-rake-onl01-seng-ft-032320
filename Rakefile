@@ -3,7 +3,7 @@ task :hello do
   puts "hello from Rake!"
 end
 
-task :environment do
+task :environment do #required for namespace :db to work b/c it needs to access the environment file
   require_relative './config/environment'
 end
 
